@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    background: rgb(255, 255, 255);
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #111111;
+    --card-bg: #ffffff;
+    --border-color: #e5e7eb;
+}
+
+.dark-mode {
+    --bg-color: #000000;
+    --text-color: #f1f5f9;
+    --card-bg: #1e293b;
+    --border-color: #334155;
+}

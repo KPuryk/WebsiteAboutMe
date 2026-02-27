@@ -1,0 +1,85 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.85);
+    border-bottom: 1px solid #dbdbdb;
+
+    z-index: 100;
+
+    
+}
+
+.header-container {
+    max-width: 1600px;  
+    margin: 0 auto;      
+    padding: 0 40px;     
+
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header-navigation{
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    
+}
+
+.header-logo-image{
+    height: 30px;
+    width: 30px;
+    
+    border-radius: 50%;   
+    object-fit: cover;  
+}
+
+.contact-nav{
+
+    color: white;
+    border-radius: 8px;
+    border: none;
+    background-color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+    
+
+   
+
+}
+.contact-nav:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+.contact-nav:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.header-navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-nav {
+    color: white !important;
+}

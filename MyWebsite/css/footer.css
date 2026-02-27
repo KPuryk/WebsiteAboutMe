@@ -1,0 +1,117 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+    justify-content: center; 
+    text-align: center;
+    background-color:rgb(255, 255, 255);
+
+    
+}
+
+.footer-email-icon{
+    height: 50px;
+    width: 50px;
+
+    border-radius: 50%;   
+    object-fit: cover;  
+}
+
+.footer-email{
+    display: flex;
+    align-items: center;  
+    justify-content: center; 
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.footer-email-text{
+    margin: 0;
+    line-height: 1;     
+    font-size: 22px;    
+}
+
+h2{
+    margin: 0;
+    padding-top: 60px;
+    color:black;
+    font-size: 40px;
+}
+
+h3{
+    font-size: 16px;
+    color: #717182;
+    width: 60%;   
+    padding-bottom: 20px;  
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center; 
+    border-radius: 16px;
+    border: 1px solid rgb(195, 195, 195);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    height: 350px;
+    margin-bottom: 100px;
+}
+
+.social-button-github,
+.social-button-linkedin,
+.social-button-email{
+    background-color: rgb(234, 234, 234);
+    height: 48px;
+    width: 48px;
+    border: none;
+    border-radius: 128px;
+
+    display: flex;              
+    align-items: center;        
+    justify-content: center;
+
+
+}
+
+.image-social-button-github,
+.image-social-button-linkedin,
+.image-social-button-email{
+    
+
+
+    width: 60%;
+    
+}
+
+.footer-social-buttons{
+    display: flex;
+    gap: 25px;
+}
+
+.footer-bottom{
+    width: 80%;
+    border-top: 1px solid #e5e7eb;  
+    margin-top: 25px;
+    padding-top: 20px;             
+}
+
+.footer-info{
+    font-size: 16px;
+    color: #676777;
+}
+
+.autours{
+    margin-top: 40px;
+    padding: 20px 0;
+
+    width: 100%;
+    text-align: center;
+
+    border-top: 1px solid #e5e7eb;   
+    color: #6b7280;                
+    font-size: 14px;
+
+    
+}
