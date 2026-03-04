@@ -128,3 +128,27 @@
     width: 11px;
     margin-right: 6px;
 }
+
+/* phone*/
+@media (max-width: 600px){
+
+
+}
+
+/* small phone*/
+@media (max-width: 414px){
+        
+
+}
+
+/* ipad */
+@media (max-width: 900px){
+
+
+}
+
+/* iPad Pro */
+@media (max-width: 1024px){
+
+    
+}

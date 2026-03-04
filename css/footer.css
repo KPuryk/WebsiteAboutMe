@@ -29,6 +29,8 @@ footer{
     margin: 0;
     line-height: 1;     
     font-size: 22px;    
+
+    word-break: break-all;
 }
 
 h2{
@@ -114,4 +116,84 @@ h3{
     font-size: 14px;
 
     
+}
+
+/* phone */
+@media (max-width: 600px){
+
+.footer-container{
+    width: 85%;
+    height: auto;
+    padding: 30px 20px;
+}
+
+.footer-email{
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-email-text{
+    font-size: 18px;
+    text-align: center;
+}
+
+h2{
+    font-size: 32px;
+}
+
+h3{
+    width: 90%;
+    font-size: 15px;
+}
+
+.footer-social-buttons{
+    gap: 18px;
+}
+
+}
+
+
+/* small phone */
+@media (max-width: 414px){
+
+.footer-email-text{
+    font-size: 20px !important;
+}
+
+.social-button-github,
+.social-button-linkedin,
+.social-button-email{
+    height: 42px;
+    width: 42px;
+}
+
+}
+
+/* ipad */
+@media (max-width: 900px){
+
+.footer-container{
+    width: 75%;
+}
+
+h2{
+    font-size: 36px;
+}
+
+h3{
+    width: 75%;
+}
+
+.footer-email-text{
+    font-size: 20px;
+}
+
+}
+
+
+/* iPad Pro */
+@media (max-width: 1024px){
+
+
+
 }

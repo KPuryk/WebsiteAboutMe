@@ -58,12 +58,74 @@
 .skill-list{
     width: 60%;
     height: 30px;
-    background-color:rgb(230, 230, 230);
+    background-color:rgb(240, 240, 240);
 
     border-radius: 4px;
 
     display: flex;              
     align-items: center;        
     justify-content: center;  
+
+    border: 1px solid rgb(195, 195, 195);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* phone*/
+@media (max-width: 600px){
+
+    h2{
+        font-size: 32px;
+    }
+    p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .skill-card{
+        min-height: 340px; 
+    }
+
+
+}
+
+
+/* small phone*/
+@media (max-width: 414px){
+        
+
+}
+
+/* ipad */
+@media (max-width: 900px){
+
+    h2{
+        font-size: 32px;
+    }
+    p{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .skills-section{
+    min-height: auto;
+    
+}
+
+}
+
+/* iPad Pro */
+@media (max-width: 1024px){
+
+h2{
+        font-size: 32px;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .skills-section{
+    min-height: auto;
+
+}
+
+}

@@ -96,3 +96,123 @@
     transform: translateY(0);
     box-shadow: 0 3px 6px rgba(0,0,0,0.08);
 }
+
+
+/* phone */
+@media (max-width: 600px){
+
+    .hero-container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .hero-image{
+    width: 220px;
+    height: 220px;
+    }
+
+    .hero-title{
+    font-size: 32px;
+    }  
+
+    .hero-subtitle{
+    font-size: 16px;
+    }
+
+    .hero-description{
+    font-size: 14px;
+    }
+
+    .hero-buttons{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    }
+    
+
+    .primary-button,
+    .secondary-button{
+    width: 50%;
+    
+    }
+
+    
+
+}
+
+/*small phone */
+@media (max-width: 414px){
+
+.primary-button,
+    .secondary-button{
+    width: 35%;
+    
+    
+    }
+
+}
+
+/* ipad */
+@media (max-width: 900px){
+
+.hero-container{
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-left{
+    margin-left: 0;
+}
+
+.hero-buttons{
+    justify-content: center;
+}
+
+.hero-image{
+    width: 300px;
+    height: 300px;
+}
+
+.hero-title{
+    font-size: 42px;
+
+    
+}
+
+
+}
+/* iPad Pro */
+@media (max-width: 1024px){
+
+    
+    
+
+    .hero-title{
+    font-size: 36px;
+    }  
+
+    .hero-subtitle{
+    font-size: 20px;
+    }
+
+    .hero-description{
+    font-size: 18px;
+    }
+
+    .hero-buttons{
+    flex-direction: row;
+    gap: 15px;
+    }
+    
+
+    .primary-button,
+    .secondary-button{
+    width: 35%;
+    
+    
+    }
+
+
+
+}

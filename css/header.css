@@ -13,7 +13,7 @@ header {
 }
 
 .header-container {
-    max-width: 1600px;  
+    max-width: 1200px;  
     margin: 0 auto;      
     padding: 0 40px;     
 
@@ -83,3 +83,82 @@ header {
 .contact-nav {
     color: white !important;
 }
+
+
+/* phone*/
+@media (max-width: 600px){
+
+.header-container{
+    padding: 0 15px;
+}
+
+.header-navigation{
+    gap: 10px;
+    padding-right: 0;
+}
+
+.header-navigation a{
+    font-size: 13px;
+}
+
+.contact-nav{
+    padding: 8px 14px;
+    font-size: 14px;
+}
+
+.header-logo-image{
+    height: 24px;
+    width: 24px;
+}
+
+}
+/*small phone */
+@media (max-width: 414px){
+
+.header-container{
+    padding: 0 15px;
+}
+
+.header-navigation{
+    gap: 10px;
+    padding-right: 0;
+}
+
+.header-navigation a{
+    font-size: 11px;
+}
+
+.contact-nav{
+    padding: 8px 14px;
+    font-size: 14px;
+}
+
+.header-logo-image{
+    height: 30px;
+    width: 30px;
+}
+
+}
+
+
+/* ipad */
+@media (max-width: 900px){
+
+.header-container{
+    padding: 0 20px;
+}
+
+.header-navigation{
+    gap: 20px;
+}
+
+}
+
+
+/* iPad Pro */
+@media (max-width: 1024px){
+
+
+
+}
+
