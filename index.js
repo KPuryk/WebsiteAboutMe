@@ -1,19 +1,21 @@
-document.getElementById('view-work-btn')
-  .addEventListener('click', () => {
+const viewBtn = document.getElementById('view-work-btn');
+if (viewBtn) {
+  viewBtn.addEventListener('click', () => {
     document.getElementById('projects')
       .scrollIntoView({ behavior: 'smooth' });
-});
+  });
+}
 
-document.querySelector('.secondary-button')
-  .addEventListener('click', () => {
+const emailBtn = document.querySelector('.secondary-button');
+if (emailBtn) {
+  emailBtn.addEventListener('click', () => {
     window.location.href = "mailto:Kostya2005igg@gmail.com";
-});
-
-
-
+  });
+}
 
 const toggle = document.getElementById("theme-toggle");
-
-toggle.addEventListener("change", () => {
+if (toggle) {
+  toggle.addEventListener("change", () => {
     document.documentElement.classList.toggle("dark-mode");
-});
+  });
+}
