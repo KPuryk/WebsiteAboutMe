@@ -143,17 +143,23 @@
     }
     
 
+    
+
+
     .primary-button,
     .secondary-button{
-    width: 50%;
-    
+    padding: 12px 32px;
+    white-space: nowrap;
+    text-align: center;
+    padding: 12px 0; 
     }
+
 
     
 
 }
 
-/*small phone */
+/*small phone 
 @media (max-width: 414px){
 
 .primary-button,
@@ -163,7 +169,7 @@
     
     }
 
-}
+} */
 
 /* ipad */
 @media (max-width: 900px){

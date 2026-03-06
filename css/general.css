@@ -70,6 +70,8 @@ body, header, section, div, button, a {
 
     
     --box-shadow-image-light: none;
+
+    --bg-panel:rgba(252, 252, 252, 0.95);
 }
 
 
@@ -123,6 +125,8 @@ body, header, section, div, button, a {
         0 0 60px rgba(255, 255, 255, 0.25),
         0 0 90px rgba(255,255,255,0.22),
         0 0 120px rgba(255,255,255,0.18);
+
+    --bg-panel:rgba(56, 56, 56, 0.963);
         
 }
     

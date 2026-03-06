@@ -116,6 +116,8 @@ header {
 
 .header-navigation a {
     text-decoration: none;
+
+    
    
 }
 
@@ -172,6 +174,20 @@ header {
 
 
 
+
+
+.menu-toggle{
+    display:none;
+    font-size:26px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    color: var(--text-color);
+}
+
+
+
+
 /* phone*/
 @media (max-width: 600px){
 
@@ -180,12 +196,63 @@ header {
 }
 
 .header-navigation{
-    gap: 10px;
+    
     padding-right: 0;
+    
+
+
+
+    position: fixed;
+
+    width: 230px;
+    height: 100vh;
+
+    background: var(--bg-panel);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    top: 0;
+    right: 0;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+
+    box-shadow: -10px 0 20px rgba(0,0,0,0.2);
+
+
+
+    
+}
+
+
+
+.theme-toggle{
+--toggle-size: 12px;
+position:absolute;
+top:10px;
+right:140px;
+}
+
+.about-nav{
+    margin-top: 120px;
+}
+
+
+.contact-nav,
+.skills-nav{
+
+    margin-top: 10px;
+}
+
+.header-navigation.active{
+    transform: translateX(0);
 }
 
 .header-navigation a{
-    font-size: 13px;
+    font-size: 20px;
 }
 
 .contact-nav{
@@ -198,8 +265,29 @@ header {
     width: 24px;
 }
 
+
+.menu-toggle{
+    display: block;
+    font-size:26px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    color: var(--text-color);
+
+    z-index: 101;
+
+    
 }
-/*small phone */
+
+
+
+
+
+
+
+} 
+
+/*small phone 
 @media (max-width: 414px){
 
 .header-container{
@@ -225,7 +313,7 @@ header {
     width: 30px;
 }
 
-}
+} */
 
 
 /* ipad */
