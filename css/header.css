@@ -4,12 +4,23 @@ header {
     left: 0;
     width: 100%;
 
-    background: rgba(255, 255, 255, 0.85);
-    border-bottom: 1px solid #dbdbdb;
-
-    z-index: 100;
+    background: var(--bg-header);
 
     
+    border-bottom: 1px solid var(--header-border);
+
+    z-index: 100;
+    color: var(--text-color);
+    
+}
+
+
+.about-nav, .header-navigation a {
+    color: var(--text-color);
+}
+
+.contact-nav {
+    color: var(--text-color-secondery) !important;
 }
 
 .header-container {
@@ -22,6 +33,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    
+
+   
     
 }
 
@@ -30,6 +45,8 @@ header {
     display: flex;
     align-items: center;
     gap: 30px;
+
+    
     
 }
 
@@ -49,25 +66,47 @@ header {
     object-fit: cover;  
 }
 
+
+
 .contact-nav{
 
-    color: white;
-    border-radius: 8px;
+    color: var(--text-color-secondery);
+    border-radius: 32px;
     border: none;
-    background-color: black;
+    background-color: var(--bg-button-main);
     padding: 10px 20px;
     cursor: pointer;
 
     transition: all 0.25s ease;
 
-    
 
-   
+    position: relative;
 
 }
+
+
+/*.contact-nav::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%);
+    
+    width: 60%;
+    height: 10px;
+
+    background: #12b328;
+    filter: blur(12px);
+    opacity: 0.8;
+
+    border-radius: 50px;
+} */
+
+
+
 .contact-nav:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    box-shadow:var(--box-shadow-button-hover);  
 }
 
 .contact-nav:active {
@@ -77,12 +116,60 @@ header {
 
 .header-navigation a {
     text-decoration: none;
-    color: black;
+   
 }
 
-.contact-nav {
-    color: white !important;
+
+
+.theme-toggle {
+  --toggle-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 6.25em;
+  height: 3.125em;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #131313 ), color-stop(50%, #efefef)) no-repeat;
+  background: -o-linear-gradient(left, #131313 50%, #efefef 50%) no-repeat;
+  background: linear-gradient(to right, #131313 50%, #efefef 50%) no-repeat;
+  background-size: 205%;
+  background-position: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 99em;
+  position: relative;
+  cursor: pointer;
+  font-size: var(--toggle-size);
 }
+
+.theme-toggle::before {
+  content: "";
+  width: 2.25em;
+  height: 2.25em;
+  position: absolute;
+  top: 0.438em;
+  left: 0.438em;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #131313), color-stop(50%, #efefef)) no-repeat;
+  background: -o-linear-gradient(left, #131313 50%, #efefef 50%) no-repeat;
+  background: linear-gradient(to right, #131313 50%, #efefef 50%) no-repeat;
+  background-size: 205%;
+  background-position: 100%;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.theme-toggle:checked::before {
+  left: calc(100% - 2.25em - 0.438em);
+  background-position: 0;
+}
+
+.theme-toggle:checked {
+  background-position: 100%;
+}
+
+
 
 
 /* phone*/

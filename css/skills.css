@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(255, 255, 255);
+    background-color:var(--bg-main);
     flex-direction: column;
     min-height: 100vh;
 }
@@ -10,14 +10,19 @@
 .skill-card{
     
     border-radius: 16px;
-    border: 1px solid rgb(195, 195, 195);
+    border: 1px solid var(--skill-border);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    background-color: rgb(252, 252, 252);
+    background-color: var(--skill-card-bg);
 
     min-height: 380px; 
     width: 220px;
 
     
+}
+.skill-p, .skill-h2{
+    color: var(--text-color);
+    
+
 }
 
 .skills-container{
@@ -37,7 +42,7 @@
 .skill-category{
 
     min-height: 48px;
-    color: black;
+    color: var(--text-color);
     font-size: 16px;
 
     
@@ -56,9 +61,9 @@
 }
 
 .skill-list{
-    width: 60%;
+    width: 75%;
     height: 30px;
-    background-color:rgb(240, 240, 240);
+    background-color:var(--skill-list-bg);
 
     border-radius: 4px;
 
@@ -66,8 +71,12 @@
     align-items: center;        
     justify-content: center;  
 
-    border: 1px solid rgb(195, 195, 195);
+    border: 1px solid var(--skill-border);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    color: var(--text-color);
+
+    
 }
 
 /* phone*/

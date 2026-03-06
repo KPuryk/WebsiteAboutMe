@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/projects.css">
+    
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -32,13 +33,13 @@
             
             <a class="about-nav" href="#about">About</a>
             <a class="skills-nav" href="#skills">Skills</a>
-            <a class="projects-nav" href="#projects">Projects</a>
             <a class="contact-nav" href="#contact">Contact</a>
-            <!--  <button id="theme-toggle">button</button> */ -->
+            <input type="checkbox" class="theme-toggle" id="theme-toggle">
+              
         </nav>
 
     </div>
-</header>
+</header> 
 
 
 <section id="about" class="hero-section">
@@ -75,37 +76,41 @@
 
 <section id="skills" class="skills-section">
 
-    <h2>Skills & Technologies</h2>
+    <h2 class="skill-h2">Skills & Technologies</h2>
 
-    <p>Currently studying web development and continuously improving my skills by working with modern tools and technologies.</p>
+    <p class="skill-p">Currently studying web development and continuously improving my skills by working with modern tools and technologies.</p>
 
     <div class="skills-container">
 
-        <div class="skill-card">
-            <div class="skill-card-content">
-                <h3 class="skill-category">Frontend</h3>
-                <div class="skill-list">HTML</div>
-                <div class="skill-list">CSS</div>
-                <div class="skill-list">JavaScript</div>
-            </div>
-        </div>
+        
 
          <div class="skill-card">
             <div class="skill-card-content">
                 <h3 class="skill-category">Tools & Design</h3>
-                <div class="skill-list">Git</div>
+                <div class="skill-list">Git / GitHub</div>
                 <div class="skill-list">Figma</div>
                 <div class="skill-list">VS Code</div>
-                <div class="skill-list">Gimp</div>
+                <div class="skill-list">Chrome DevTools</div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-card-content">
+                <h3 class="skill-category">Frontend</h3>
+                <div class="skill-list">HTML5</div>
+                <div class="skill-list">CSS3 / SCSS</div>
+                <div class="skill-list">JavaScript</div>
+                <div class="skill-list">Responsive Design</div>
+                <div class="skill-list">React</div>
             </div>
         </div>
 
          <div class="skill-card">
             <div class="skill-card-content">
                 <h3 class="skill-category">Languages</h3>
-                <div class="skill-list">Polish</div>
-                <div class="skill-list">English</div>
-                <div class="skill-list">Ukrainian</div>
+                <div class="skill-list">Polish B2</div>
+                <div class="skill-list">English B2</div>
+                <div class="skill-list">Ukrainian C1</div>
                 
             </div>
         </div>
@@ -229,8 +234,8 @@
 
 <footer>
 
-    <h2>Let's Work Together</h2>
-    <h3>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</h3>
+    <h2 class="work-together">Let's Work Together</h2>
+    <h3 class="open-to">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</h3>
 
     <div id="contact" class="footer-container">
 

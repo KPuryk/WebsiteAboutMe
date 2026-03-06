@@ -10,8 +10,10 @@ document.querySelector('.secondary-button')
 });
 
 
-/*const toggle = document.getElementById("theme-toggle");
 
-*toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-}); */
+
+const toggle = document.getElementById("theme-toggle");
+
+toggle.addEventListener("change", () => {
+    document.documentElement.classList.toggle("dark-mode");
+});
